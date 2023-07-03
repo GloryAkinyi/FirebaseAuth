@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
 class LoginActivity : AppCompatActivity() {
 
 
@@ -50,7 +51,8 @@ class LoginActivity : AppCompatActivity() {
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
 
-            } else
+            }
+            else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
 
